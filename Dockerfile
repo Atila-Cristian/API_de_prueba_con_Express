@@ -4,7 +4,7 @@ ARG NODE_VERSION=20
 
 FROM node:${NODE_VERSION}-alpine
 
-WORKDIR /usr/src/index.js
+WORKDIR /usr/src/app
 
 COPY package*.json .
 
@@ -22,3 +22,4 @@ EXPOSE 3000
 
 # Run the application.
 CMD ["npm", "run", "dev"]
+
